@@ -1,0 +1,83 @@
+.services-heading
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height: 202px;
+    gap: 30px;
+    margin-bottom: 80px;
+    h2
+    {
+        font-size: 64px;
+        line-height: 112%;
+        color: $blackd2;
+        letter-spacing: -2px;
+        padding: 0px 70px;
+    }
+    p
+    {
+        font-size: 18px;
+        line-height: 156%;
+        text-align: center;
+        letter-spacing: -0.3px;
+        color:$gray7b;
+    }
+}
+.services-list
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 30px;
+    margin-bottom: 85px;
+    li
+    {
+        width: 370px;
+        height: 300px;
+        box-shadow: 0px 20px 50px rgba(79, 119, 255, 0.2);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        img
+        {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 22px;
+            margin-top: 50px;
+        }
+        .services-title
+        {
+            font-family: 'Outfit';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 145%;
+            text-align: center;
+            letter-spacing: -1px;
+            color: #120F1F;
+            margin-bottom:40px;
+        }
+        .services-desc  
+        {
+            font-family: 'DM Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 162%;
+            text-align: center;
+            color:$gray7b;
+        }
+    }
+}
+.services-link
+{
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: -0.3px;
+    text-transform: uppercase;
+    padding: 18px 32px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  
+}

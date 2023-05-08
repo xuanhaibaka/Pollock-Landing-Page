@@ -1,0 +1,32 @@
+header.header 
+    img.header-shapes(srcSet="../images/Shapes.png 2x", alt="shapes")
+    a.header-scroll(href="#services")
+        .header-scroll-inner 
+            img(src="../images/arrow-down.svg", alt="arrow")
+    nav.header-nav 
+        .container.header-nav-container
+            a.logo(href="/")
+                img(srcSet="../images/logo.png 2x" , alt="logo")
+                span Pollock
+            ul.menu 
+                each val in ['HOME','SEVICES','ABOUT','PAGES','BLOG','CONTACT']
+                    li.menu-item
+                        a.menu-link(href="#")= val
+            .header-right 
+                img.icon.header-search(srcset="../images/header_search.svg 2x", alt="search")
+                img.icon.header-cart(srcset="../images/header_cart.svg 2x", alt="cart")
+                button.singup-button.general-button Sign Up
+    .container 
+        .hero 
+            .hero-left 
+                h1.hero-left-heading Branding to fuel your growth 
+                    span &nbsp;goals & ideas.
+                p.hero-left-desc We're a digital product and UX agency in San Francisco. Strategy, design, and development across all platforms.  
+                .hero-left-bottom 
+                    a.btn-left-bottom.general-button Get Started
+                    a.btn-play
+                        .img-vector
+                            img(src="../images/vector.svg", alt="vecto")
+                        span.general-text How It Works
+            .hero-right
+                img(srcset="../images/img_main_girl.png 2x", alt="main_girl")
