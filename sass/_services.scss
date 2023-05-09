@@ -1,3 +1,14 @@
+.wrap-servives
+{
+    margin-bottom: 164px;
+}
+.services-top
+{
+    width: 100%;
+    position: relative;
+    padding-bottom: 130px;
+    margin-bottom: 120px;
+}
 .services-heading
 {
     display: flex;
@@ -28,8 +39,8 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     column-gap: 30px;
-    margin-bottom: 85px;
-    li
+    
+    .services-item
     {
         width: 370px;
         height: 300px;
@@ -77,7 +88,27 @@
     text-transform: uppercase;
     padding: 18px 32px;
     position: absolute;
+    bottom: 0px;
     left: 50%;
     transform: translateX(-50%);
-  
+}
+.services-bottom
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 80px;
+
+    &-title
+    {
+        font-size: 36px;
+        color: #000000;
+        letter-spacing: -1px;
+    }
+    .brand
+    {
+        display: flex;
+        align-items: center;
+        column-gap: 105px;
+    }    
 }

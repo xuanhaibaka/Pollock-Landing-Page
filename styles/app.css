@@ -26,7 +26,6 @@ a {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
-  position: relative;
 }
 
 .general-button {
@@ -40,12 +39,21 @@ a {
   cursor: pointer;
 }
 
-.general-text {
+.gnr-outfits {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 500;
   text-align: center;
   letter-spacing: -0.3px;
+  color: #2D3958;
+}
+
+.gnr-dmsans {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  color: #7B88A8;
+  line-height: 156%;
 }
 
 .icon {
@@ -226,6 +234,17 @@ a {
   margin-top: 86px;
 }
 
+.wrap-servives {
+  margin-bottom: 164px;
+}
+
+.services-top {
+  width: 100%;
+  position: relative;
+  padding-bottom: 130px;
+  margin-bottom: 120px;
+}
+
 .services-heading {
   display: flex;
   flex-direction: column;
@@ -253,9 +272,8 @@ a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 30px;
-  margin-bottom: 85px;
 }
-.services-list li {
+.services-list .services-item {
   width: 370px;
   height: 300px;
   box-shadow: 0px 20px 50px rgba(79, 119, 255, 0.2);
@@ -264,13 +282,13 @@ a {
   flex-direction: column;
   align-items: center;
 }
-.services-list li img {
+.services-list .services-item img {
   width: 60px;
   height: 60px;
   margin-bottom: 22px;
   margin-top: 50px;
 }
-.services-list li .services-title {
+.services-list .services-item .services-title {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 400;
@@ -281,7 +299,7 @@ a {
   color: #120F1F;
   margin-bottom: 40px;
 }
-.services-list li .services-desc {
+.services-list .services-item .services-desc {
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 400;
@@ -298,8 +316,126 @@ a {
   text-transform: uppercase;
   padding: 18px 32px;
   position: absolute;
+  bottom: 0px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.services-bottom {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 80px;
+}
+.services-bottom-title {
+  font-size: 36px;
+  color: #000000;
+  letter-spacing: -1px;
+}
+.services-bottom .brand {
+  display: flex;
+  align-items: center;
+  column-gap: 105px;
+}
+
+.wrap-about {
+  background: #F7F5F1;
+  padding: 120px 0px;
+  margin-bottom: 120px;
+  height: 2926px;
+}
+.wrap-about .about-title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 30px;
+  margin-bottom: 120px;
+}
+.wrap-about h2 {
+  font-size: 48px;
+  letter-spacing: -2px;
+  color: #2D3958;
+}
+.wrap-about .about-desc {
+  font-size: 18px;
+  letter-spacing: -0.3px;
+  text-align: center;
+  color: #7B88A8;
+}
+
+.about-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 150px;
+}
+.about-list .about-item {
+  height: 720px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.about-list .about-item .about-item-left {
+  position: relative;
+  border: solid 1px black;
+  height: 100%;
+}
+.about-list .about-item .about-item-left img {
+  position: absolute;
+}
+.about-list .about-item .about-item-left img:first-child {
+  left: 35px;
+}
+.about-list .about-item .about-item-left img:nth-child(2) {
+  left: -56px;
+}
+.about-list .about-item .about-item-left img:nth-child(3) {
+  left: 130px;
+  bottom: 0;
+}
+.about-list .about-item .about-item-left img:nth-child(4) {
+  left: 433px;
+  top: 71px;
+}
+.about-list .about-item .about-item-right {
+  border: solid 1px black;
+  height: 100%;
+}
+.about-list .about-item .about-item-right .about-item-top {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 30px;
+  font-size: 36px;
+  letter-spacing: -1px;
+  margin-bottom: 50px;
+}
+.about-list .about-item .about-item-right .item-right-desc {
+  letter-spacing: -0.3px;
+  font-size: 18px;
+}
+.about-list .about-item .about-item-right .about-item-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 30px;
+}
+.about-list .about-item .about-item-right .about-item-bottom .about-content {
+  display: flex;
+  align-items: start;
+  column-gap: 13px;
+}
+.about-list .about-item .about-item-right .about-item-bottom .about-content .about-content-title {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 10px;
+}
+.about-list .about-item .about-item-right .about-item-bottom .about-content .about-content-title h4 {
+  font-size: 18px;
+  letter-spacing: 0.4px;
+}
+.about-list .about-item .about-item-right .about-item-bottom .about-content .about-content-title .about-content-desc {
+  font-size: 16px;
 }
 
 /*# sourceMappingURL=app.css.map */

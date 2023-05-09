@@ -1,0 +1,12 @@
+mixin services-item(image, alt , title, desc)
+    .services-item
+        img.services-icon(src= image , alt= alt)
+        h3.services-title= title
+        p.services-desc= desc
+
+mixin about-content(image,alt,title,desc)
+    .about-content
+        img.about-images-content(src=image, alt=alt)
+        .about-content-title
+            h4.gnr-outfits= title
+            p.gnr-dmsans.about-content-desc= desc

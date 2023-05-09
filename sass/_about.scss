@@ -1,0 +1,122 @@
+.wrap-about
+{
+    background: #F7F5F1;
+    padding: 120px 0px;
+    margin-bottom: 120px;
+    height: 2926px;
+
+    .about-title
+    {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 30px;
+        margin-bottom: 120px;
+    }
+    h2
+    {
+        font-size: 48px;
+        letter-spacing: -2px;
+        color: $blackd2;
+    }
+    .about-desc
+    {
+        font-size: 18px;
+        letter-spacing: -0.3px;
+        text-align: center;
+        color: $gray7b;
+    }
+    
+}
+.about-list
+{
+    display: flex;
+    flex-direction: column;
+    row-gap: 150px;
+    .about-item
+    {
+        height: 720px;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        .about-item-left
+        {
+            position: relative;
+            border: solid 1px black;
+            height: 100%;
+            img
+            {
+                position: absolute;
+            }
+            img:first-child
+            {
+                left:35px;
+            }
+            img:nth-child(2)
+            {
+                left: -56px;
+            }
+            img:nth-child(3)
+            {
+                left:130px;
+                bottom: 0;
+            
+            }
+            img:nth-child(4)
+            {
+                left:433px;
+                top: 71px;
+            }
+        }
+        .about-item-right
+        {
+            border: solid 1px black;
+            height: 100%;
+            .about-item-top
+            {
+                margin-top: 100px;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                row-gap: 30px;
+                font-size: 36px;
+                letter-spacing: -1px;
+                margin-bottom: 50px;
+            }
+            .item-right-desc
+            {
+                letter-spacing: -0.3px;
+                font-size: 18px;
+            }
+            .about-item-bottom
+            {
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                row-gap: 30px;
+                .about-content
+                {
+                    display: flex;
+                    align-items: start;
+                    column-gap: 13px;
+                    .about-content-title
+                    {       
+                        display: flex;
+                        flex-direction: column;
+                        align-items: start; 
+                        row-gap: 10px;     
+                        h4
+                        {
+                            font-size: 18px;  
+                            letter-spacing: 0.4px;
+                        }  
+                        .about-content-desc
+                        {
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
