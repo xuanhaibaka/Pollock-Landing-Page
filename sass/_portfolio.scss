@@ -1,0 +1,46 @@
+.portfolio
+{
+    padding: 120px 0px;
+
+    
+    &-heading
+    {
+        text-align: center;
+        letter-spacing: -0.02em;
+        font-size: 42px;
+        line-height: 119%;
+        max-width: 970px;
+        margin: 0 auto 100px;
+    }
+    &-list
+    {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px 30px;
+        width: 100%;
+    }
+    
+    &-item
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        gap: 30px;
+        text-decoration: none;
+        font-size: 22px;
+        
+    }
+    &-title
+    {
+        &:hover
+        {
+            color: #4F77FF;
+        }
+    }
+    &-image
+    {
+        width: 100%;
+        
+    }
+}

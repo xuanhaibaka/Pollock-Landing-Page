@@ -1,0 +1,9 @@
+section.portfolio 
+    .container 
+        h2.portfolio-heading.gnr-outfits Explore our recent client success stories and witness our full 360 transformations come to life
+        .portfolio-list 
+            each p in [{title:"UX/UI Design",image:"../images/img-portfolio1.png"},{title:"NFT Market UI",image:"../images/img-portfolio2.png"},{title:"Health Mobile App",image:"../images/img-portfolio3.png"},{title:"Wallet App Development",image:"../images/img-portfolio4.png"}]
+                a.portfolio-item(href="#")
+                    .portfolio-image 
+                        img(src=p.image, alt="UX/UI Design") 
+                    h4.portfolio-title.gnr-outfits= p.title 
